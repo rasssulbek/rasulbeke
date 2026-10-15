@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rasulbek Elboyev — Portfolio & SMM strategiyalari</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Shovqinli fon (noise overlap) & Atmostera effektlari -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="bg-grid"></div>
+
+  <!-- Yuqori Navigatsiya -->
+  <header>
+    <div class="nav-container container">
+      <a href="#" class="logo">
+        <span class="monogram">RE</span>
+        <span class="full-name" id="nav-fullname">Rasulbek Elboyev</span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#about">Men haqimda</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="#portfolio">Ishlarim</a>
+        <a href="#process">Ish jarayoni</a>
+        <a href="#contact" class="btn btn-secondary">Loyiha haqida gaplashamiz</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menuni ochish">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobil Menyu -->
+  <div class="mobile-menu">
+    <a href="#about">Men haqimda</a>
+    <a href="#services">Xizmatlar</a>
+    <a href="#portfolio">Ishlarim</a>
+    <a href="#process">Ish jarayoni</a>
+    <a href="#contact" class="btn btn-primary">Loyiha haqida gaplashamiz</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section container">
+    <div class="hero-content">
+      <div class="status-tags" id="status-container">
+        <!-- JS orqali to'ldiriladi -->
+      </div>
+      <h1 class="hero-title">G'OYALARNI MAZMUNLI KONTENTGA AYLANTIRAMAN.</h1>
+      <p class="hero-subtitle">
+        Iqtisodiy fikrlash, kreativ yondashuv va zamonaviy AI vositalari yordamida bizneslar uchun kontent g‘oyalari, strategiyalar va raqamli yechimlar yarataman.
+      </p>
+      <div class="hero-meta" id="hero-meta-details">
+        <!-- Dinamik yosh va ma'lumotlar -->
+      </div>
+      <div class="hero-actions">
+        <a href="#services" class="btn btn-primary">Xizmatlarimni ko'rish</a>
+        <a href="#contact" class="btn btn-outline">Men bilan bogʻlanish</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="portrait-card">
+        <!-- "portrait.jpg" rasmingizni joylashtirasiz -->
+        <img id="my-portrait" src="portrait.jpg" alt="Rasulbek Elboyev">
+        <div class="portrait-overlay"></div>
+        <div class="econ-tag">SAMDU</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Men Haqimda Section -->
+  <section id="about" class="about-section container">
+    <div class="section-header">
+      <span class="badge">Shaxsiy profil</span>
+      <h2>Men haqimda</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Men Samarqand davlat universitetida (SamDU) iqtisodiyot yo‘nalishida tahsil olayotgan yosh mutaxassisman. Iqtisodiy fikrlash, auditoriya ehtiyojlarini tushunish va kreativ g‘oyalarni amaliy kontentga aylantirish meni qiziqtiradi.</p>
+        <p>SMM va kontent strategiyasi yo‘nalishida bilimlarimni rivojlantirib, bizneslarga ijtimoiy tarmoqlarda mazmunli va izchil kommunikatsiya yaratishda yordam berishga intilaman.</p>
+        <p>Mening yondashuvim — shunchaki post tayyorlash emas, balki kontent nima uchun yaratilayotgani, kimga mo‘ljallangani va qanday natijaga xizmat qilishini tushunishdir.</p>
+      </div>
+      <div class="about-cards">
+        <div class="info-card">
+          <h4>🎓 Ta’lim</h4>
+          <p id="about-education">Iqtisodiyot, SamDU</p>
+        </div>
+        <div class="info-card">
+          <h4>🚀 Yoʻnalish</h4>
+          <p>SMM va kontent strategiyasi</p>
+        </div>
+        <div class="info-card">
+          <h4>🛠️ Yondashuv</h4>
+          <p>Tahlil, kreativlik va tizimlilik</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Xizmatlar Section -->
+  <section id="services" class="services-section container">
+    <div class="section-header">
+      <span class="badge">Nimalar qila olaman?</span>
+      <h2>Biznesingiz uchun xizmatlar</h2>
+    </div>
+    <div class="services-grid" id="services-active-grid">
+      <!-- JS orqali faol xizmatlar keladi -->
+    </div>
+    <div class="services-subheader">
+      <span class="badge badge-dev">Rivojlantirilmoqda</span>
+      <h3>Kelajakda rejalashtirilgan xizmatlar</h3>
+    </div>
+    <div class="services-grid" id="services-dev-grid">
+      <!-- JS orqali rivojlanayotgan xizmatlar keladi -->
+    </div>
+  </section>
+
+  <!-- Interaktiv Portfolio (Namunaviy loyiha) -->
+  <section id="portfolio" class="portfolio-section container">
+    <div class="section-header">
+      <span class="badge">Ish namunasi (SMM)</span>
+      <h2>Namunaviy loyiha: "3 kunlik kreativ kontent"</h2>
+      <p class="warning-text">⚠️ Namunaviy loyiha — real mijoz natijasi emas, kreativ mahorat namoyishi.</p>
+    </div>
+
+    <!-- Interaktiv KAMPANIYA Panel -->
+    <div class="portfolio-interactive">
+      <div class="campaign-selector">
+        <button class="day-tab active" data-day="1">1-kun: Muammo va Tanishuv</button>
+        <button class="day-tab" data-day="2">2-kun: Amaliy maslahat</button>
+        <button class="day-tab" data-day="3">3-kun: Harakatga chorlov</button>
+      </div>
+
+      <div class="platform-selector">
+        <button class="platform-tab active" data-platform="telegram">✈️ Telegram Post</button>
+        <button class="platform-tab" data-platform="instagram">📸 Instagram Post / Reels</button>
+      </div>
+
+      <div class="interactive-display">
+        <div class="meta-sidebar">
+          <h4>Kollaboratsiya Maqsadi</h4>
+          <p id="preview-target" class="text-glow">Oʻquv markaziga ilk qiziqish va muammolarni ochib berish.</p>
+          
+          <h4>Auditoriya</h4>
+          <p id="preview-audience">Samarqanddagi til va IT oʻrganmoqchi boʻlgan yoshlar va ularning ota-onalari.</p>
+          
+          <h4>Oʻlchov koʻrsatkichlari (Metrika)</h4>
+          <p id="preview-metrics">Izohlar soni, yuborilgan soʻrovlar (direct/repost), saqlab olinganlar soni.</p>
+        </div>
+
+        <div class="preview-panel">
+          <div class="preview-header">
+            <span class="preview-badge" id="platform-badge">✈️ Telegram Preview</span>
+            <div class="window-dots"><span></span><span></span><span></span></div>
+          </div>
+          <div class="preview-body">
+            <div class="post-mockup">
+              <h3 id="post-title">Bilim olishni boshlashdagi eng katta toʻsiq nima?</h3>
+              <p id="post-text" class="post-content">Matn yuklanmoqda...</p>
+              <div class="visual-suggestion">
+                <strong>Vizual taklif:</strong> <span id="visual-desc">Xunob bo'lgan talaba va orqa fonda kitoblar tasviri.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Qo'shimcha loyiha kartalari -->
+    <div class="additional-projects">
+      <div class="proj-card">
+        <h3>🛍️ Mahsulot uchun kreativ kontent</h3>
+        <p>E-commerce mahsulotlari uchun target va organik reklama matnlari hamda visual ssenariylar tayyorlash namunasi.</p>
+        <span class="badge">Namunaviy ish</span>
+      </div>
+      <div class="proj-card">
+        <h3>📊 Biznes uchun tahliliy jadval</h3>
+        <p>Iqtisodiy bilimlar asosida Excel/Google Sheets'da tushum va xarajatlarni hisoblash uchun sodda, qulay andozalar.</p>
+        <span class="badge">Tahlil</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ish jarayoni -->
+  <section id="process" class="process-section container">
+    <div class="section-header">
+      <span class="badge">Bosqichma-bosqich</span>
+      <h2>Mening ish jarayonim</h2>
+    </div>
+    <div class="process-timeline">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h4>Tahlil</h4>
+        <p>Biznesingiz, uning maqsadi va eng muhimi — maqsadli auditoriyangizni o'rganaman.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h4>Strategiya</h4>
+        <p>Qanday kontent, qaysi tarmoqda va qanday tartibda chiqishini rejalashtiramiz.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h4>Yaratish</h4>
+        <p>Matnlar, ssenariylar, vizual g'oyalar va AI yordamidagi tezkor draftlarni tayyorlayman.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h4>Takomillashtirish</h4>
+        <p>Natijalarni ko'rib chiqamiz, fikrlaringiz va statistikaga qarab jarayonni yaxshilaymiz.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aloqa & Bog'lanish -->
+  <section id="contact" class="contact-section container">
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <span class="badge">Bog'lanish</span>
+        <h2>G‘oyangiz bormi? Birgalikda muhokama qilamiz.</h2>
+        <p>Biznesingiz uchun kontent yoki marketing g‘oyasi kerak bo‘lsa, menga yozing. Vazifangizni ko‘rib chiqib, eng mos yechimni topamiz.</p>
+        
+        <div class="contact-links">
+          <a href="#" id="link-phone" class="c-link">📞 +998 91 313 13 91</a>
+          <a href="#" id="link-email" class="c-link">📧 raaasulbek@gmail.com</a>
+          <a href="#" id="link-tg-direct" target="_blank" class="c-link">✈️ Telegram: @rasulbeke</a>
+          <a href="#" id="link-tg-channel" target="_blank" class="c-link">📢 Kanal: @raaasulbek</a>
+          <a href="#" id="link-instagram" target="_blank" class="c-link">📸 Instagram: @rasssulbek</a>
+        </div>
+      </div>
+
+      <div class="contact-form-container">
+        <!-- Aloqa Formasi -->
+        <form id="portfolio-form" class="cyber-form">
+          <div class="form-group">
+            <label for="usr-name">Ismingiz</label>
+            <input type="text" id="usr-name" placeholder="Masalan, Alisher" required>
+          </div>
+          <div class="form-group">
+            <label for="usr-tg">Telegram foydalanuvchi nomi (@username)</label>
+            <input type="text" id="usr-tg" placeholder="Masalan, @alisher_smm" required>
+          </div>
+          <div class="form-group">
+            <label for="usr-phone">Telefon raqamingiz</label>
+            <input type="tel" id="usr-phone" placeholder="Masalan, +998 90 123 45 67" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Xabar yuborish</button>
+        </form>
+        <div id="form-success-msg" class="success-message hidden">
+          <p>Yuborilmoqda... Sizga hozir Email ochiladi, so'ngra Telegram kanalimizga yo'naltirilasiz!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container container">
+      <p>&copy; <span id="current-year">2026</span> <span id="footer-fullname">Rasulbek Elboyev</span>. Barcha huquqlar himoyalangan.</p>
+      <div class="footer-links">
+        <a href="#about">Men haqimda</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="#portfolio">Loyiha</a>
+        <a href="#contact">Aloqa</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
